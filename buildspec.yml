@@ -1,20 +1,18 @@
 version: 0.2
 
 phases:
-#   pre_build:
-#     commands:
-#       - export ACCSS_KEY=${ACCESS_KEY}
-#       - export SECRET_KEY=${SECRET_KEY}
-#   install:
-#     commands:
-#       - npm i aws-sdk
-#       - npm i request
+  pre_build:
+    commands:
+      - export ACCSS_KEY=${ACCESS_KEY}
+      - export SECRET_KEY=${SECRET_KEY}
+  install:
+    commands:
+      - npm i aws-sdk
+      - npm i request
   build:
     commands:
       - ./gradlew assembleDebug
-#       - node script.js
-      - cd app/build/outputs/apk/debug
-      - ls
+      - node script.js
 artifacts:
   files:
     - app/build/outputs/apk/app-debug.apk
