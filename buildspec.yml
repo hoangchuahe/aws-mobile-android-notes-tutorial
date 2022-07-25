@@ -13,7 +13,7 @@ phases:
     commands:
       - ./gradlew assembleDebug
 #       - node script.js
-      - cd app/build/outputs/apk
+      - cd app/build/outputs/apk/debug
       - ls
 artifacts:
   files:
