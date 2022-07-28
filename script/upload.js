@@ -15,7 +15,7 @@ const APP_PHARMACY_PATH = './/pharmacy.apk';
 // const SECRET_KEY = "None";
 
 AWS.config = new AWS.Config();
-AWS.config.credentials = new AWS.Credentials(env.ACCESS_KEY, env.SECRET_KEY);
+AWS.config.credentials = new AWS.Credentials(${env.ACCESS_KEY}, ${env.SECRET_KEY});
 
 var devicefarm = new AWS.DeviceFarm({ region: REGION });
 function get_project_arn(name) {
